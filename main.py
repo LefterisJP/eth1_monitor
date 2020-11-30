@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 
 def configure_logging():
-    root = logging.getLogger()
+    root = log
     root.setLevel(logging.DEBUG)
 
     handler = logging.StreamHandler(sys.stdout)

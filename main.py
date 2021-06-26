@@ -23,7 +23,7 @@ def configure_logging():
 
 def stop_rpc_daemon():
     """This stops the local eth client. Customize for your needs"""
-    call(['systemctl', 'stop', 'turbogeth-rpc-daemon'])
+    call(['systemctl', 'stop', 'erigon-rpc-daemon'])
 
 
 def _get_result(location: str, response: requests.Response) -> int:
